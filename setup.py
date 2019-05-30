@@ -13,6 +13,9 @@ setup(
 	name='django-relativedelta',
 	version='1.0.5',
 	packages=find_packages(),
+    package_data={
+		'relativedeltafield': ['./templates/admin/widgets/*.html'],
+	},
 	include_package_data=True,
 	license='MIT License',
 	description='Django alternative to DurationField using dateutil.relativedelta',
